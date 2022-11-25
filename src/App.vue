@@ -23,9 +23,10 @@ export default {
 
 <style lang="scss">
   @import "~bootstrap/scss/bootstrap.scss";
+  @import "../styles/variables.scss";
 
   body{
-    font-family: 'Outfit', sans-serif;
+    font-family: $bodyFont;
   }
 
 </style>
