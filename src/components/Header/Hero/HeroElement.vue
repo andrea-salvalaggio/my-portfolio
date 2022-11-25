@@ -4,7 +4,7 @@
       <img src="../../../assets/img/profile-pic-light.png" alt="Profile Image">
     </div>
     <div class="title-container text-center py-3">
-      <h2>Hey! I’m Andrea<br>Full Stack Web Developer</br> Based in Padua, Italy
+      <h2>Hey! I’m Andrea<br>Full Stack Web Developer<br> Based in Padua, Italy
       </h2>
     </div>
     <div class="d-md-flex">
@@ -38,6 +38,6 @@ export default {
 
 h2{
   font-size: $h2FontSize;
-  font-weight: 800;
+  font-weight: $bigFontWeight;
 }
 </style>
