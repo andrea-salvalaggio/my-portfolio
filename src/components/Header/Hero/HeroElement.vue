@@ -3,16 +3,20 @@
     <div class="profile-container">
       <img src="../../../assets/img/profile-pic-light.png" alt="Profile Image">
     </div>
-    <div class="title-container text-center py-3">
+    <div class="text-center py-3">
       <h2>Hey! I’m Andrea<br>Full Stack Web Developer<br> Based in Padua, Italy
       </h2>
     </div>
     <div class="d-md-flex">
-      <div class="col-12">
-        bottone 1
+      <div class="col-12 col-md-6 button-container">
+        <button class="text-uppercase text-white border-0 px-4 py-3">download cv
+          <i class="ri-download-line align-middle ps-1"></i>
+        </button>
       </div>
-      <div class="col-12">
-        bottone 2
+      <div class="col-12 col-md-6">
+        <button class="text-uppercase text-white border-0 px-4 py-3">download cv
+          <i class="ri-download-line align-middle ps-1"></i>
+        </button>
       </div>
     </div>
   </div>
@@ -27,16 +31,25 @@ export default {
 <style lang="scss" scoped>
 @import "../../../../styles/variables.scss";
 
-.profile-container{
+.profile-container {
   width: 120px;
 
-  img{
+  img {
     width: 100%;
     height: 100%;
   }
 }
 
-h2{
+.button-container {
+  button {
+    font-size: $normalFontSize;
+    font-weight: $normalFontWeight;
+    border-radius: $btnRadius;
+    background-color: $primaryColorBrand;
+  }
+}
+
+h2 {
   font-size: $h2FontSize;
   font-weight: $bigFontWeight;
 }
