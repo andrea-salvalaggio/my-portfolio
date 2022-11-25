@@ -22,8 +22,8 @@ export default {
 </script>
 
 <style lang="scss">
-  @import "~bootstrap/scss/bootstrap.scss";
-  @import "../styles/variables.scss";
+@import "~bootstrap/scss/bootstrap.scss";
+@import "../styles/variables.scss";
 
   body{
     font-family: $bodyFont;
