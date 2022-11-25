@@ -1,0 +1,10 @@
+<svg id="vuejs" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rettangolo_17" data-name="Rettangolo 17" width="50" height="50" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Raggruppa_9" data-name="Raggruppa 9" clip-path="url(#clip-path)">
+    <path id="Tracciato_33" data-name="Tracciato 33" d="M40,0H10A10.029,10.029,0,0,0,0,10V40A10.029,10.029,0,0,0,10,50H40A10.029,10.029,0,0,0,50,40V10A10.029,10.029,0,0,0,40,0M33.9,9.8,25,25.3,16,9.8h4.4L25,17.6l4.5-7.8ZM25,40.1,7.4,9.8h6.5L25,28.8l11-19h6.6Z" fill="#5f53fe"/>
+  </g>
+</svg>

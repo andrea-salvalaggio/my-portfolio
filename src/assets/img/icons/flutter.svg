@@ -1,0 +1,10 @@
+<svg id="flutter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rettangolo_19" data-name="Rettangolo 19" width="50" height="50" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Raggruppa_11" data-name="Raggruppa 11" clip-path="url(#clip-path)">
+    <path id="Tracciato_35" data-name="Tracciato 35" d="M40,0H10A10,10,0,0,0,0,10V40A10,10,0,0,0,10,50H40A10,10,0,0,0,50,40V10A10,10,0,0,0,40,0M29.656,33.008l.023.024,9.427,9.436c-3.55.008-7.1,0-10.649.005-.2.045-.327-.14-.457-.254l-4.363-4.367.235.235L18.8,33.018l5.062-5.055,0,0,4.28-4.27c.141-.186.4-.094.6-.118H39.106ZM20.877,25.63l-4.752,4.726-5.407-5.414L28.243,7.417l10.869-.012Z" fill="#5f53fe"/>
+  </g>
+</svg>
