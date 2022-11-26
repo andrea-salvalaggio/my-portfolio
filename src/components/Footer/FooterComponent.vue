@@ -26,6 +26,10 @@ export default {
 <style lang="scss" scoped>
 @import "../../../styles/variables.scss";
 
+.stroke-line{
+  border: 2px solid $secondaryColorBgLight;
+}
+
 .icon {
   i:hover{
     color: $primaryColorBrand;
@@ -40,9 +44,5 @@ export default {
   span{
     color: $primaryColorBrand;
   }
-}
-
-.stroke-line{
-  border: 2px solid $secondaryColorBgLight;
 }
 </style>

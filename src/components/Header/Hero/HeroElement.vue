@@ -46,6 +46,11 @@ export default {
   }
 }
 
+h2 {
+  font-size: $h2FontSize;
+  font-weight: $bigFontWeight;
+}
+
 .btn-container {
   transition: transform 0.4s ease-in-out;
 
@@ -70,10 +75,5 @@ export default {
 
 .btn-shadow {
   box-shadow: $primaryColorShadowLight;
-}
-
-h2 {
-  font-size: $h2FontSize;
-  font-weight: $bigFontWeight;
 }
 </style>
