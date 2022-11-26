@@ -1,20 +1,22 @@
 <template>
-  <div class="col-12 d-flex flex-column align-items-center justify-content-center">
-    <div class="profile-container">
-      <img src="../../../assets/img/profile-pic-light.png" alt="Profile Image">
+  <div>
+    <div class="col-12 d-flex flex-column align-items-center justify-content-center">
+      <div class="profile-container">
+        <img src="../../../assets/img/profile-pic-light.png" alt="Profile Image">
+      </div>
+      <div class="text-center py-3">
+        <h2>Hey! I’m Andrea<br>Full Stack Web Developer<br> Based in Padua, Italy
+        </h2>
+      </div>
     </div>
-    <div class="text-center py-3">
-      <h2>Hey! I’m Andrea<br>Full Stack Web Developer<br> Based in Padua, Italy
-      </h2>
-    </div>
-    <div class="d-md-flex">
-      <div class="col-12 col-md-6 button-container">
-        <button class="text-uppercase text-white border-0 px-4 py-3">download cv
+    <div class="col-12 d-md-flex justify-content-center text-center pt-2">
+      <div class="button-container pe-md-2">
+        <button class="btn text-uppercase text-white border-0 px-4 py-3">download cv
           <i class="ri-download-line align-middle ps-1"></i>
         </button>
       </div>
-      <div class="col-12 col-md-6">
-        <button class="text-uppercase text-white border-0 px-4 py-3">download cv
+      <div class="button-container ps-md-2">
+        <button class="btn text-uppercase text-white border-0 px-4 py-3">download cv
           <i class="ri-download-line align-middle ps-1"></i>
         </button>
       </div>
