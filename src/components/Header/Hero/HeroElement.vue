@@ -16,8 +16,8 @@
         </button>
       </div>
       <div class="button-container ps-2">
-        <button class="btn text-uppercase text-white border-0 px-4 py-3">download cv
-          <i class="ri-download-line align-middle ps-1"></i>
+        <button class="btn text-uppercase border-0 px-4 py-3">contact me
+          <i class="ri-mail-line align-top ps-1"></i>
         </button>
       </div>
     </div>
@@ -48,6 +48,13 @@ export default {
     font-weight: $normalFontWeight;
     border-radius: $btnRadius;
     background-color: $primaryColorBrand;
+  }
+
+  &:nth-child(2){
+    button{
+      color: $primaryColorBrand;
+      background-color: $secondaryColorBgLight;
+    }
   }
 }
 
