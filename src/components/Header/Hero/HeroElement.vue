@@ -47,6 +47,8 @@ export default {
 }
 
 .btn-container {
+  transition: transform 0.4s ease-in-out;
+
   button {
     font-size: $normalFontSize;
     font-weight: $normalFontWeight;
@@ -59,6 +61,10 @@ export default {
       color: $primaryColorBrand;
       background-color: $secondaryColorBgLight;
     }
+  }
+
+  &:hover{
+    transform: translateY(-0.8rem);
   }
 }
 
