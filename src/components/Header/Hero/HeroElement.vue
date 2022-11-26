@@ -9,13 +9,13 @@
         </h2>
       </div>
     </div>
-    <div class="col-12 d-md-flex justify-content-center text-center pt-2">
-      <div class="button-container pe-md-2">
+    <div class="col-12 d-flex justify-content-center text-center pt-2">
+      <div class="button-container pe-2">
         <button class="btn text-uppercase text-white border-0 px-4 py-3">download cv
           <i class="ri-download-line align-middle ps-1"></i>
         </button>
       </div>
-      <div class="button-container ps-md-2">
+      <div class="button-container ps-2">
         <button class="btn text-uppercase text-white border-0 px-4 py-3">download cv
           <i class="ri-download-line align-middle ps-1"></i>
         </button>
