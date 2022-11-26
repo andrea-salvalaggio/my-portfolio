@@ -11,8 +11,10 @@
     </div>
     <div class="col-12 d-flex justify-content-center text-center pt-2">
       <div class="btn-container pe-2">
-        <button class="btn btn-shadow text-uppercase text-white border-0 px-4 py-3">download cv
+        <button class="btn btn-shadow text-uppercase text-white border-0 px-4 py-3">
+          <a class="text-decoration-none text-reset" href="https://drive.google.com/file/d/1-1MjQ4YnbzlUrKQYh7FwioFZe9VDRS0g/view?usp=sharing" target="_blank">download cv
           <i class="ri-download-line align-middle ps-1"></i>
+        </a>
         </button>
       </div>
       <div class="btn-container ps-2">
