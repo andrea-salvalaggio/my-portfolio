@@ -4,7 +4,7 @@
     <div class="container px-lg-5">
       <div class="row px-md-4 px-lg-5">
         <div class="col-12 d-flex justify-content-between align-items-center py-4 px-5">
-          <div class="icon">
+          <div class="icon ps-lg-5">
             <a class="text-decoration-none text-reset" href="https://github.com/andrea-salvalaggio" target="_blank">
               <i class="ri-github-fill fs-5"></i>
             </a>
@@ -12,7 +12,7 @@
               <i class="ri-linkedin-fill fs-5 ps-3"></i>
             </a>
           </div>
-          <div>
+          <div class="pe-lg-5">
             <p class="copyright m-0">© Andrea Salvalaggio <span class="ps-1">2022</span></p>
           </div>
         </div>
