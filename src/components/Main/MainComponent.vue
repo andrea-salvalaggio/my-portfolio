@@ -1,7 +1,7 @@
 <template>
-  <div class="container px-lg-5">
+  <div class="container px-lg-5 mt-5">
     <div class="row justify-content-center px-md-4 px-lg-5">
-      <div class="col-6 d-flex justify-content-center bg-dark">
+      <div class="col-12 col-md-8 col-lg-6 d-flex justify-content-center bg-dark">
         <div>
           <button>projects</button>
         </div>
@@ -19,6 +19,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+@import "../../../styles/variables.scss";
 
 </style>
