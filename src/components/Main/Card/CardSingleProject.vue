@@ -65,66 +65,65 @@ export default {
 @import "../../../../styles/variables.scss";
 
 .project-container {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 
-    img {
-        width: 100%;
-        height: 100%;
-        border-radius: $projectRadius;
-    }
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: $projectRadius;
+  }
 }
 
-.overlay-container{
+.overlay-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - 1.95rem);
+  height: calc(100% - 1.95rem);
+  background-color: $primaryColorOverlay;
+  border-radius: $overlayRadius;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+
+  &:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .overlay-description {
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: calc(100% - 1.95rem);
-    height: calc(100% - 1.95rem);
-    background-color: $primaryColorOverlay;
-    border-radius: $overlayRadius;
-    opacity: 0;
-    transition: opacity .2s ease-in-out;
+    bottom: 0;
+    padding: 2rem;
 
-    &:hover{
-        opacity: 1;
-        cursor: pointer;
+    p {
+      font-size: $normalFontSize;
+      font-weight: $normalFontWeight;
+      color: $secondaryColorBrand;
     }
 
-    .overlay-description{
-        position: absolute;
-        bottom: 0;
-        padding: 2rem;
-
-        p{
-            font-size: $normalFontSize;
-            font-weight: $normalFontWeight;
-            color: $secondaryColorBrand;
-        }
-
-        h2{
-            font-size: $h2FontSize;
-            font-weight: $bigFontWeight;
-            color: $secondaryColorText;
-        }
-
-        button {
-            font-size: $normalFontSize;
-            font-weight: $smallFontWeight;
-            border-radius: $btnRadius;
-            background-color: $secondaryColorBrand;
-            transition: transform 0.4s ease-in-out;
-
-            a{
-                color: $primaryColorBrand;
-            }
-
-            &:hover{
-                transform: translateY(-0.8rem);
-            }
-        }
+    h2 {
+      font-size: $h2FontSize;
+      font-weight: $bigFontWeight;
+      color: $secondaryColorText;
     }
+
+    button {
+      font-size: $normalFontSize;
+      font-weight: $smallFontWeight;
+      border-radius: $btnRadius;
+      background-color: $secondaryColorBrand;
+      transition: transform 0.4s ease-in-out;
+
+      a {
+        color: $primaryColorBrand;
+      }
+
+      &:hover {
+        transform: translateY(-0.8rem);
+      }
+    }
+  }
 }
-
 </style>

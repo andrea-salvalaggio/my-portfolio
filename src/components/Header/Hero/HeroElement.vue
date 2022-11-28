@@ -76,4 +76,10 @@ h2 {
 .btn-shadow {
   box-shadow: $primaryColorShadowLight;
 }
+
+@media screen and (min-width: 992px) {
+  h2{
+    font-size: 2.5rem;
+  }
+}
 </style>
