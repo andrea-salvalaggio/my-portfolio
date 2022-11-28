@@ -16,12 +16,18 @@
         </div>
       </div>
     </div>
+
+    <ProjectsElement/>
   </div>
 </template>
 
 <script>
-export default {
+import ProjectsElement from './Section/ProjectsElement.vue'
 
+export default {
+  components: {
+    ProjectsElement
+  }
 }
 </script>
 
