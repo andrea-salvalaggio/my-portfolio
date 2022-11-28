@@ -100,7 +100,7 @@ export default {
         p{
             font-size: $normalFontSize;
             font-weight: $normalFontWeight;
-            color: $secondryColorBrand;
+            color: $secondaryColorBrand;
         }
 
         h2{
@@ -113,10 +113,15 @@ export default {
             font-size: $normalFontSize;
             font-weight: $smallFontWeight;
             border-radius: $btnRadius;
-            background-color: $secondryColorBrand;
+            background-color: $secondaryColorBrand;
+            transition: transform 0.4s ease-in-out;
 
             a{
                 color: $primaryColorBrand;
+            }
+
+            &:hover{
+                transform: translateY(-0.8rem);
             }
         }
     }
