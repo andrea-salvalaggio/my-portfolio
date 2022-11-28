@@ -62,6 +62,14 @@ export default {
       a {
         color: $primaryColorText;
       }
+      
+      &:hover{
+        background-color: $primaryColorBgLight;
+
+        a{
+          color: $primaryColorBrand;
+        }
+      }
     }
   }
 }
