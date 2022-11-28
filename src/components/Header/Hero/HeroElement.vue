@@ -56,7 +56,7 @@ h2 {
 
   button {
     font-size: $normalFontSize;
-    font-weight: $normalFontWeight;
+    font-weight: $smallFontWeight;
     border-radius: $btnRadius;
     background-color: $primaryColorBrand;
   }
