@@ -1,12 +1,10 @@
 <template>
     <div class="d-md-flex flex-md-wrap justify-content-center my-5 p-0">
         <div v-for="(project, index) in projects" :key="index" class="col-12 col-md-6 col-lg-5 project-container">
-            <div class="overlay-container">
-                <div class="">
-                    <p>{{ project.type }}</p>
-                    <h2>{{ project.title }}</h2>
-                    <button>{{ project.cta }}</button>
-                </div>
+            <div class="overlay-container position-absolute top-50 start-50 translate-middle">
+                <p>{{ project.type }}</p>
+                <h2>{{ project.title }}</h2>
+                <button>{{ project.cta }}</button>
             </div>
             <img :src="project.img" :alt="project.text" class="p-3">
         </div>
@@ -48,20 +46,20 @@ export default {
 
 .project-container {
     position: relative;
+    overflow: hidden;
 
     img {
         width: 100%;
+        height: 100%;
         border-radius: $projectRadius;
     }
 }
 
 .overlay-container{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    width: calc(100% - 2rem);
+    height: calc(100% - 2rem);
     background-color: $primaryColorOverlay;
+    border-radius: $overlayRadius;
 }
 
 </style>
