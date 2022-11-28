@@ -1,7 +1,10 @@
 <template>
     <div class="row justify-content-center mx-3 mx-md-0">
-        <div class="col-12 d-flex my-5">
-            <img class="w-50" src="../../../assets/img/projects/deliveboo.png" alt="DeliveBoo Project">
+        <div class="col-12 d-flex flex-wrap project-container my-5">
+            <img class="w-50 p-3" src="../../../assets/img/projects/deliveboo.png" alt="DeliveBoo Project">
+            <img class="w-50 p-3" src="../../../assets/img/projects/deliveboo.png" alt="DeliveBoo Project">
+            <img class="w-50 p-3" src="../../../assets/img/projects/deliveboo.png" alt="DeliveBoo Project">
+            <img class="w-50 p-3" src="../../../assets/img/projects/deliveboo.png" alt="DeliveBoo Project">
         </div>
     </div>
 </template>
@@ -12,6 +15,13 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+@import "../../../../styles/variables.scss";
+
+.project-container{
+    img{
+        border-radius: $projectRadius;
+    }
+}
 
 </style>
