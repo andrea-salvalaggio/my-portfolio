@@ -1,8 +1,8 @@
 <template>
     <div class="d-md-flex flex-md-wrap justify-content-center my-5 p-0">
         <div v-for="(project, index) in projects" :key="index" class="col-12 col-md-6 col-lg-5 project-container">
-            <div class="overlay-container position-absolute top-50 start-50 translate-middle">
-                <div class="overlay-description">
+            <div class="overlay-container">
+                <div class="overlay-description p-lg-5">
                     <p class="text-uppercase m-0">{{ project.type }}</p>
                     <h2 class="pb-3">{{ project.title }}</h2>
                     <button class="btn text-uppercase text-white border-0 px-4 py-3">
@@ -76,10 +76,21 @@ export default {
 }
 
 .overlay-container{
-    width: calc(100% - 1.9rem);
-    height: calc(100% - 1.9rem);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% - 1.95rem);
+    height: calc(100% - 1.95rem);
     background-color: $primaryColorOverlay;
     border-radius: $overlayRadius;
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+
+    &:hover{
+        opacity: 1;
+        cursor: pointer;
+    }
 
     .overlay-description{
         position: absolute;
