@@ -2,9 +2,11 @@
     <div class="d-md-flex flex-md-wrap justify-content-center my-5 p-0">
         <div v-for="(project, index) in projects" :key="index" class="col-12 col-md-6 col-lg-5 project-container">
             <div class="overlay-container position-absolute top-50 start-50 translate-middle">
-                <p>{{ project.type }}</p>
-                <h2>{{ project.title }}</h2>
-                <button>{{ project.cta }}</button>
+                <div class="overlay-description">
+                    <p class="text-uppercase m-0">{{ project.type }}</p>
+                    <h2>{{ project.title }}</h2>
+                    <button>{{ project.cta }}</button>
+                </div>
             </div>
             <img :src="project.img" :alt="project.text" class="p-3">
         </div>
@@ -48,6 +50,24 @@ export default {
     position: relative;
     overflow: hidden;
 
+    .overlay-description{
+        position: absolute;
+        bottom: 0;
+        padding: 2rem;
+
+        p{
+            font-size: $normalFontSize;
+            font-weight: $smallFontWeight;
+            color: $secondryColorBrand;
+        }
+
+        h2{
+            font-size: $h2FontSize;
+            font-weight: $bigFontWeight;
+            color: $secondaryColorText;
+        }
+    }
+
     img {
         width: 100%;
         height: 100%;
@@ -56,8 +76,8 @@ export default {
 }
 
 .overlay-container{
-    width: calc(100% - 2rem);
-    height: calc(100% - 2rem);
+    width: calc(100% - 1.9rem);
+    height: calc(100% - 1.9rem);
     background-color: $primaryColorOverlay;
     border-radius: $overlayRadius;
 }
