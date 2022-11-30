@@ -1,5 +1,5 @@
 <template>
-    <div class="row justify-content-center mx-3 mx-md-0">
+    <div class="row justify-content-center mx-3 mx-md-0 mx-lg-4">
         <CardSingleProject/>
     </div>
 </template>

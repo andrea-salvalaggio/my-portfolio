@@ -1,6 +1,6 @@
 <template>
     <div class="d-md-flex flex-md-wrap justify-content-center my-5 p-0">
-        <div v-for="(project, index) in projects" :key="index" class="col-12 col-md-6 col-lg-5 project-container">
+        <div v-for="(project, index) in projects" :key="index" class="col-12 col-md-6 project-container">
             <div class="overlay-container">
                 <div class="overlay-description p-lg-5">
                     <p class="text-uppercase m-0">{{ project.type }}</p>
@@ -124,6 +124,12 @@ export default {
         transform: translateY(-0.8rem);
       }
     }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .project-container{
+    width: calc(100% / 2.5);
   }
 }
 </style>
