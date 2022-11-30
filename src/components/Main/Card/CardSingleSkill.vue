@@ -1,6 +1,12 @@
 <template>
-    <div class="d-flex">
-        
+    <div class="col-12 col-md-6 d-flex flex-column align-items-center">
+        <h3>Frontend</h3>
+        <div class="col-12 col-md-6 d-flex flex-wrap text-center pt-4">
+            <div v-for="(frontSkill, index) in frontSkills" :key="index" class="col-4">
+                <img :src="frontSkill.icon" :alt="frontSkill.title">
+                <p>{{ frontSkill.title }}</p>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -20,6 +26,10 @@ export default {
                 {
                     icon: require("../../../assets/img/icons/sass.svg"),
                     title: "sass",
+                },
+                {
+                    icon: require("../../../assets/img/icons/bootstrap.svg"),
+                    title: "bootstrap",
                 },
                 {
                     icon: require("../../../assets/img/icons/javascript.svg"),
