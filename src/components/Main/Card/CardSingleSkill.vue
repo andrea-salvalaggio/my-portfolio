@@ -1,11 +1,24 @@
 <template>
-    <div class="col-12 col-md-6 d-flex flex-column align-items-center">
-        <h2>Frontend</h2>
-        <div class="col-12 d-flex flex-wrap text-center pt-3">
-            <div v-for="(frontSkill, index) in frontSkills" :key="index" class="d-flex flex-column align-items-center justify-content-center icon-container m-2 py-3">
-                <img :src="frontSkill.icon" :alt="frontSkill.title">
-                <p class="text-uppercase m-0 pt-2">{{ frontSkill.title }}
-                </p>
+    <div class="d-md-flex">
+        <div class="col-12 col-md-6 text-center">
+            <h2>Frontend</h2>
+            <div class="col-12 d-flex flex-wrap justify-content-center text-center pt-3">
+                <div v-for="(frontSkill, index) in frontSkills" :key="index" class="d-flex flex-column align-items-center justify-content-center icon-container m-2 py-3 py-lg-4">
+                    <img :src="frontSkill.icon" :alt="frontSkill.title">
+                    <p class="text-uppercase m-0 pt-2">{{ frontSkill.title }}
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 text-center mt-5 mt-md-0">
+            <h2>Backend</h2>
+            <div class="col-12 d-flex flex-wrap justify-content-center text-center pt-3">
+                <div v-for="(backSkill, index) in backSkills" :key="index" class="d-flex flex-column align-items-center justify-content-center icon-container m-2 py-3 py-lg-4">
+                    <img :src="backSkill.icon" :alt="backSkill.title">
+                    <p class="text-uppercase m-0 pt-2">{{ backSkill.title }}
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -82,13 +95,19 @@ h2 {
   background-color: $secondaryColorBgLight;
   border-radius: $skillRadius;
 
-  img{
+  img {
     width: 45px;
   }
 
   p {
     font-size: $normalFontSize;
     font-weight: $smallFontWeight;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .icon-container {
+    width: calc((100% / 3) - 3.5rem);
   }
 }
 </style>
