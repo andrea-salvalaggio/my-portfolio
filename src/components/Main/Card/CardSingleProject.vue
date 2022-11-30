@@ -128,8 +128,20 @@ export default {
 }
 
 @media screen and (min-width: 992px) {
-  .project-container{
+  .project-container {
     width: calc(100% / 2.5);
+  }
+
+  .overlay-container {
+    .overlay-description {
+      p {
+        font-size: 1rem;
+      }
+
+      h2 {
+        font-size: 2.6rem;
+      }
+    }
   }
 }
 </style>
