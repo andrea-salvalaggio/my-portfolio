@@ -31,9 +31,14 @@ export default {
 @import "~bootstrap/scss/bootstrap.scss";
 @import "../styles/variables.scss";
 
-  body{
-    font-family: $bodyFont;
-    background-color: $primaryColorBgLight;
-  }
+body {
+  font-family: $bodyFont;
+  color: $primaryColorText;
+  background-color: $primaryColorBgLight;
+}
 
+.dark {
+  background-color: $primaryColorBgDark;
+  color: $secondaryColorText;
+}
 </style>
