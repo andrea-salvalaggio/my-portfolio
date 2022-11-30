@@ -10,17 +10,17 @@
         </div>
       </div>
 
-      <HeroElement/>
+      <HeroComponent/>
     </div>
   </div>
 </template>
 
 <script>
-import HeroElement from './Hero/HeroElement.vue';
+import HeroComponent from './Hero/HeroComponent.vue';
 
 export default {
   components: {
-    HeroElement
+    HeroComponent
   }
 }
 </script>
