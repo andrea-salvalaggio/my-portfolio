@@ -1,10 +1,10 @@
 <template>
     <div class="col-12 col-md-6 d-flex flex-column align-items-center">
-        <h3>Frontend</h3>
+        <h2>Frontend</h2>
         <div class="col-12 col-md-6 d-flex flex-wrap text-center pt-4">
-            <div v-for="(frontSkill, index) in frontSkills" :key="index" class="col-4">
+            <div v-for="(frontSkill, index) in frontSkills" :key="index" class="col-4 icon-container">
                 <img :src="frontSkill.icon" :alt="frontSkill.title">
-                <p>{{ frontSkill.title }}</p>
+                <p class="text-uppercase pt-2">{{ frontSkill.title }}</p>
             </div>
         </div>
     </div>
@@ -70,4 +70,16 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../../../styles/variables.scss";
+
+h2 {
+  font-size: $h2FontSize;
+  font-weight: $normalFontWeight;
+}
+
+.icon-container {
+  p {
+    font-size: $normalFontSize;
+    font-weight: $smallFontWeight;
+  }
+}
 </style>
