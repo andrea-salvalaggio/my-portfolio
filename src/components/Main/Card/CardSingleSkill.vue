@@ -1,10 +1,11 @@
 <template>
     <div class="col-12 col-md-6 d-flex flex-column align-items-center">
         <h2>Frontend</h2>
-        <div class="col-12 col-md-6 d-flex flex-wrap text-center pt-4">
-            <div v-for="(frontSkill, index) in frontSkills" :key="index" class="col-4 icon-container">
+        <div class="col-12 col-md-6 d-flex flex-wrap text-center pt-3">
+            <div v-for="(frontSkill, index) in frontSkills" :key="index" class="d-flex flex-column align-items-center justify-content-center icon-container m-2 py-3">
                 <img :src="frontSkill.icon" :alt="frontSkill.title">
-                <p class="text-uppercase pt-2">{{ frontSkill.title }}</p>
+                <p class="text-uppercase m-0 pt-2">{{ frontSkill.title }}
+                </p>
             </div>
         </div>
     </div>
@@ -77,6 +78,14 @@ h2 {
 }
 
 .icon-container {
+  width: calc((100% / 3) - 1rem);
+  background-color: $secondaryColorBgLight;
+  border-radius: $skillRadius;
+
+  img{
+    width: 45px;
+  }
+
   p {
     font-size: $normalFontSize;
     font-weight: $smallFontWeight;
