@@ -1,8 +1,8 @@
 <template>
-  <div id="app" :class="(mode === 'dark') ? 'dark' : ''">
-    <HeaderComponent/>
+  <div id="app" :class="mode">
+    <HeaderComponent :mode="mode"/>
     <MainComponent/>
-    <FooterComponent/>
+    <FooterComponent :mode="mode"/>
   </div>
 </template>
 

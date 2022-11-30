@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid p-0 m-0">
-    <hr class="stroke-line m-0">
+    <hr class="m-0">
     <div class="container px-lg-5">
       <div class="row px-md-4 px-lg-5">
         <div class="col-12 d-flex justify-content-between align-items-center py-4 px-5">
@@ -25,15 +25,19 @@
 
 <script>
 export default {
-
+  props: ['mode']
 }
 </script>
 
 <style lang="scss" scoped>
 @import "../../../styles/variables.scss";
 
-.stroke-line {
+hr {
   border: 2px solid $secondaryColorBgLight;
+}
+
+.dark hr{
+  border: 2px solid $secondaryColorBgDark;
 }
 
 .icon {

@@ -8,7 +8,7 @@
           </a>
         </div>
         <div class="icon pe-lg-5">
-          <i class="ri-moon-line"></i>
+          <i class="ri-moon-line">{{ mode }}</i>
         </div>
       </div>
 
@@ -23,7 +23,9 @@ import HeroComponent from './Hero/HeroComponent.vue';
 export default {
   components: {
     HeroComponent
-  }
+  },
+
+  props: ['mode']
 }
 </script>
 
