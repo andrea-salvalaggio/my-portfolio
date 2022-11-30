@@ -19,7 +19,7 @@
 
 <script>
 export default {
-
+  props: ['mode']
 }
 </script>
 
@@ -50,5 +50,16 @@ export default {
 
 .btn-shadow {
   box-shadow: $primaryColorShadowLight;
+}
+.dark .btn-container {
+  &:nth-child(2) {
+    button {
+      background-color: $secondaryColorBgDark;
+    }
+  }
+}
+
+.dark .btn-shadow{
+  box-shadow: $primaryColorShadowDark;
 }
 </style>

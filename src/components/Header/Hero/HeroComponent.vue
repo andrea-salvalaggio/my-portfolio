@@ -1,7 +1,7 @@
 <template>
   <div>
     <PresentationElement/>
-    <ContactElement/>
+    <ContactElement :mode="mode"/>
   </div>
 </template>
 
