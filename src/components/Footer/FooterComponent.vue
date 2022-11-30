@@ -13,7 +13,9 @@
             </a>
           </div>
           <div class="pe-lg-5">
-            <p class="copyright m-0">© Andrea Salvalaggio <span class="ps-1">2022</span></p>
+            <p class="copyright m-0">©<span class="ps-1">2022</span>
+              Built by Andrea Salvalaggio
+            </p>
           </div>
         </div>
       </div>
@@ -43,7 +45,7 @@ export default {
 
 .copyright {
   font-size: $smallFontSize;
-  font-weight: $smallFontWeight;
+  font-weight: $smallerFontWeight;
 
   span {
     color: $primaryColorBrand;
