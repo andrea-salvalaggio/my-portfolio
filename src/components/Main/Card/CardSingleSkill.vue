@@ -105,6 +105,10 @@ h2 {
   }
 }
 
+.dark .icon-container{
+    background-color: $secondaryColorBgDark;
+}
+
 @media screen and (min-width: 992px) {
   .icon-container {
     width: calc((100% / 3) - 3.5rem);
