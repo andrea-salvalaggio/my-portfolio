@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" :class="(mode === 'dark') ? 'dark' : ''">
     <HeaderComponent/>
     <MainComponent/>
     <FooterComponent/>
@@ -17,7 +17,13 @@ export default {
     HeaderComponent,
     MainComponent,
     FooterComponent
-  }
+  },
+
+  data: function(){
+    return{
+      mode: 'dark'
+    }
+  },
 }
 </script>
 
@@ -27,6 +33,7 @@ export default {
 
   body{
     font-family: $bodyFont;
+    background-color: $primaryColorBgLight;
   }
 
 </style>
