@@ -1,7 +1,7 @@
 <template>
   <div id="app" :class="mode">
     <HeaderComponent :mode="mode"/>
-    <MainComponent/>
+    <MainComponent :mode="mode"/>
     <FooterComponent :mode="mode"/>
   </div>
 </template>

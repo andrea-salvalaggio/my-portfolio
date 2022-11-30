@@ -65,4 +65,36 @@ export default {
     }
   }
 }
+
+.dark .nav-container{
+  background-color: $secondaryColorBgDark;
+}
+
+.dark .btn-container {
+  button {
+    background-color: $primaryColorBgDark ;
+
+    a {
+      color: $primaryColorBrand;
+    }
+  }
+
+  &:nth-child(2) {
+    button {
+      background-color: $secondaryColorBgDark;
+
+      a {
+        color: $secondaryColorText;
+      }
+
+      &:hover {
+        background-color: $primaryColorBgDark;
+
+        a {
+          color: $primaryColorBrand;
+        }
+      }
+    }
+  }
+}
 </style>
