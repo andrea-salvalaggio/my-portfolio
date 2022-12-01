@@ -7,9 +7,9 @@
             <img class="logo w-50" src="../../assets/img/logo.svg" alt="Personal Logo">
           </a>
         </div>
-        <div class="icon pe-lg-5">
-          <i class="ri-moon-line">{{ mode }}</i>
-        </div>
+
+        <!-- Icon for Dark Mode -->
+        <ToggleComponent/>
       </div>
 
       <HeroComponent :mode="mode"/>
@@ -19,10 +19,12 @@
 
 <script>
 import HeroComponent from './Hero/HeroComponent.vue';
+import ToggleComponent from './Hero/ToggleComponent.vue';
 
 export default {
   components: {
-    HeroComponent
+    HeroComponent,
+    ToggleComponent
   },
 
   props: ['mode']
@@ -32,14 +34,7 @@ export default {
 <style lang="scss" scoped>
 @import "../../../styles/variables.scss";
 
-.icon {
-  &:hover {
-    color: $primaryColorBrand;
-    cursor: pointer;
-  }
-}
-
-.dark .logo{
+.dark .logo {
   filter: invert(1);
 }
 </style>
