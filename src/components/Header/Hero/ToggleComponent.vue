@@ -1,7 +1,10 @@
 <template>
     <div class="icon pe-lg-5">
-        <i class="ri-moon-line"
+        <i v-if="(mode = !mode)" class="ri-moon-line"
         :checked="(mode === 'dark') ? 'checked' : false"
+        @click="$emit('toggle')" >
+        </i>
+        <i v-else class="ri-sun-line"
         @click="$emit('toggle')">
         </i>
     </div>

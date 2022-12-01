@@ -49,6 +49,7 @@ body {
 
 .dark {
   background-color: $primaryColorBgDark;
+  transition: background-color 0.3s ease-in-out;
   color: $secondaryColorText;
 }
 </style>

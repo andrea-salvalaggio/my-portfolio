@@ -107,6 +107,7 @@ h2 {
 
 .dark .icon-container{
     background-color: $secondaryColorBgDark;
+    transition: background-color 0.3s ease-in-out;
 }
 
 @media screen and (min-width: 992px) {
