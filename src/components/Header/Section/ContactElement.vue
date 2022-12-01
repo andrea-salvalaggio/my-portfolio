@@ -54,7 +54,7 @@ export default {
   &:nth-child(2) {
     button {
       background-color: $secondaryColorBgDark;
-      transition: background-color 0.3s ease-in-out;
+      transition: background-color 0.2s ease-in-out;
     }
   }
 }
