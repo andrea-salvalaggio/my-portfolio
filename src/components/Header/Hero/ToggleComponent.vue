@@ -1,9 +1,8 @@
 <template>
     <div class="icon pe-lg-5">
-        <i class="ri-moon-line toggle"
+        <i class="ri-moon-line"
         :checked="(mode === 'dark') ? 'checked' : false"
-        @change="$emit('toggle')">
-        {{ mode }}
+        @click="$emit('toggle')">
         </i>
     </div>
 </template>

@@ -9,7 +9,7 @@
         </div>
 
         <!-- Icon for Dark Mode -->
-        <ToggleComponent/>
+        <ToggleComponent :mode="mode" @toggle="$emit('toggle')"/>
       </div>
 
       <HeroComponent :mode="mode"/>

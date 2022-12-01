@@ -1,6 +1,6 @@
 <template>
   <div id="app" :class="mode">
-    <HeaderComponent :mode="mode"/>
+    <HeaderComponent :mode="mode" @toggle="toggle"/>
     <MainComponent :mode="mode"/>
     <FooterComponent :mode="mode"/>
   </div>
@@ -21,9 +21,19 @@ export default {
 
   data: function(){
     return{
-      mode: 'dark'
+      mode: 'light'
     }
   },
+
+  methods: {
+    toggle(){
+      if (this.mode === "dark"){
+        this.mode = "light";
+      } else {
+        this.mode = "dark";
+      }
+    }
+  }
 }
 </script>
 
