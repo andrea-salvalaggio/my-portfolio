@@ -72,37 +72,37 @@ export default {
 
 .dark .nav-container{
   background-color: $secondaryColorBgDark;
-  transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.1s ease-in-out;
 }
 
 .dark .btn-container {
   button {
     background-color: $primaryColorBgDark;
-    transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.1s ease-in-out;
 
     a {
       color: $primaryColorBrand;
-      transition: background-color 0.2s ease-in-out;
+      transition: background-color 0.1s ease-in-out;
     }
   }
 
   &:nth-child(2) {
     button {
       background-color: $secondaryColorBgDark;
-      transition: background-color 0.2s ease-in-out;
+      transition: background-color 0.1s ease-in-out;
 
       a {
         color: $secondaryColorText;
-        transition: background-color 0.2s ease-in-out;
+        transition: background-color 0.1s ease-in-out;
       }
 
       &:hover {
         background-color: $primaryColorBgDark;
-        transition: background-color 0.2s ease-in-out;
+        transition: background-color 0.1s ease-in-out;
 
         a {
           color: $primaryColorBrand;
-          transition: background-color 0.2s ease-in-out;
+          transition: background-color 0.1s ease-in-out;
         }
       }
     }

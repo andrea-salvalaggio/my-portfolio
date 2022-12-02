@@ -5,12 +5,12 @@
                 <div class="overlay-description p-lg-5">
                     <p class="text-uppercase m-0">{{ project.type }}</p>
                     <h2 class="pb-3">{{ project.title }}</h2>
-                    <button class="btn text-uppercase text-white border-0 px-4 py-3">
-                        <a class="text-decoration-none" :href="project.link" target="_blank">
+                    <a class="text-decoration-none" :href="project.link" target="_blank">
+                      <button class="btn text-uppercase border-0 px-4 py-3">
                         {{ project.cta }}
                         <i class="ri-arrow-right-up-line align-top ps-1"></i>
-                        </a>
-                    </button>
+                      </button>
+                    </a>
                 </div>
             </div>
             <img :src="project.img" :alt="project.text" class="p-3">
@@ -113,6 +113,7 @@ export default {
       font-size: $normalFontSize;
       font-weight: $smallFontWeight;
       border-radius: $btnRadius;
+      color: $primaryColorBrand;
       background-color: $secondaryColorBrand;
       transition: transform 0.4s ease-in-out;
 
