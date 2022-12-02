@@ -1,9 +1,13 @@
 <template>
   <div class="container-fluid p-0 m-0">
+
+    <!-- Line -->
     <hr class="m-0">
     <div class="container px-lg-5">
       <div class="row px-md-4 px-lg-5">
         <div class="col-12 d-flex justify-content-between align-items-center py-4 px-5">
+
+          <!-- Social -->
           <div class="icon ps-lg-5">
             <a class="text-decoration-none text-reset" href="https://github.com/andrea-salvalaggio" target="_blank">
               <i class="ri-github-fill fs-5"></i>
@@ -12,6 +16,8 @@
               <i class="ri-linkedin-fill fs-5 ps-3"></i>
             </a>
           </div>
+
+          <!-- Copyright -->
           <div class="pe-lg-5">
             <p class="copyright m-0">©<span class="ps-1">2022</span>
               Built by Andrea Salvalaggio
@@ -30,13 +36,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../../../styles/variables.scss";
+@import "@/../styles/variables.scss";
 
 hr {
   border: 2px solid $secondaryColorBgLight;
 }
 
-.dark hr{
+.dark hr {
   border: 2px solid $secondaryColorBgDark;
 }
 
