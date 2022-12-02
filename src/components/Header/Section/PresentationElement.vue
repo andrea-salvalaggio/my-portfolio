@@ -1,8 +1,12 @@
 <template>
     <div class="col-12 d-flex flex-column align-items-center justify-content-center">
+
+      <!-- Profile Image -->
       <div class="profile-container">
         <!-- <img src="../../../assets/img/profile-pic-light.png" alt="Profile Image"> -->
       </div>
+
+      <!-- Title -->
       <div class="text-center py-3">
         <h2>Hey! I’m Andrea<br>Full Stack Web Developer<br> Based in Padua, Italy
         </h2>
@@ -17,7 +21,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../../../styles/variables.scss';
+@import "@/../styles/variables.scss";
+
 .profile-container {
   width: 120px;
   height: 120px;
@@ -26,7 +31,7 @@ export default {
   background-repeat: no-repeat;
 }
 
-.dark .profile-container{
+.dark .profile-container {
   width: 120px;
   height: 120px;
   background-image: url(@/assets/img/profile-pic-dark.png);
@@ -40,7 +45,7 @@ h2 {
 }
 
 @media screen and (min-width: 992px) {
-  h2{
+  h2 {
     font-size: 2.6rem;
   }
 }

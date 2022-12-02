@@ -1,8 +1,7 @@
 <template>
     <div class="icon pe-lg-5">
         <i v-if="(mode = !mode)" class="ri-moon-line"
-        :checked="(mode === 'dark') ? 'checked' : false"
-        @click="$emit('toggle')" >
+        @click="$emit('toggle')">
         </i>
         <i v-else class="ri-sun-line"
         @click="$emit('toggle')">
@@ -18,11 +17,11 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/../styles/variables.scss";
+
 .icon {
   &:hover {
     color: $primaryColorBrand;
     cursor: pointer;
   }
 }
-
 </style>

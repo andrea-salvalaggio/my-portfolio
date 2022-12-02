@@ -21,7 +21,7 @@ export default {
 
   data: function(){
     return{
-      mode: 'light'
+      mode: 'light',
     }
   },
 
@@ -49,7 +49,7 @@ body {
 
 .dark {
   background-color: $primaryColorBgDark;
-  transition: background-color 0.2s ease-in-out;
   color: $secondaryColorText;
+  transition: background-color 0.2s ease-in-out;
 }
 </style>

@@ -2,14 +2,14 @@
     <div class="col-12 d-flex justify-content-center text-center pt-2">
       <div class="btn-container pe-2">
         <a class="text-decoration-none text-reset" href="https://drive.google.com/file/d/1-1MjQ4YnbzlUrKQYh7FwioFZe9VDRS0g/view?usp=sharing" target="_blank">
-          <button class="btn btn-shadow text-uppercase text-white border-0 px-4 py-3">download cv
+          <button class="btn-shadow text-uppercase text-white border-0 px-4 py-3">download cv
             <i class="ri-download-line align-middle ps-1"></i>
           </button>
         </a>
       </div>
       <div class="btn-container ps-2">
         <a class="text-decoration-none text-reset" href="mailto:andrea.salvalaggio95@gmail.com?subject=Richiesta incontro">
-          <button class="btn text-uppercase border-0 px-4 py-3">contact me
+          <button class="text-uppercase border-0 px-4 py-3">contact me
             <i class="ri-mail-line align-top ps-1"></i>
           </button>
         </a>
