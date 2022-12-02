@@ -1,5 +1,7 @@
 <template>
     <div class="d-md-flex">
+
+        <!-- Frontend Skills -->
         <div class="col-12 col-md-6 text-center">
             <h2>Frontend</h2>
             <div class="col-12 d-flex flex-wrap justify-content-center text-center pt-3">
@@ -11,6 +13,7 @@
             </div>
         </div>
 
+        <!-- Backend Skills -->
         <div class="col-12 col-md-6 text-center mt-5 mt-md-0">
             <h2>Backend</h2>
             <div class="col-12 d-flex flex-wrap justify-content-center text-center pt-3">
@@ -83,7 +86,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../../../../styles/variables.scss";
+@import "@/../styles/variables.scss";
 
 h2 {
   font-size: $h2FontSize;
@@ -105,9 +108,9 @@ h2 {
   }
 }
 
-.dark .icon-container{
-    background-color: $secondaryColorBgDark;
-    transition: background-color 0.2s ease-in-out;
+.dark .icon-container {
+  background-color: $secondaryColorBgDark;
+  transition: background-color 0.2s ease-in-out;
 }
 
 @media screen and (min-width: 992px) {
