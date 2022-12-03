@@ -1,11 +1,11 @@
 <template>
     <div @click="$emit('toggle')" class="icon pe-lg-5">
-        <!-- <i v-if="(mode = !mode)" class="ri-moon-line"
-        @click="$emit('toggle')">
-        </i>
-        <i v-else class="ri-sun-line"
-        @click="$emit('toggle')">
-        </i> -->
+      <!-- <i v-if="(mode = !mode)" class="ri-moon-line"
+      @click="$emit('toggle')">
+      </i>
+      <i v-else class="ri-sun-line"
+      @click="$emit('toggle')">
+      </i> -->
     </div>
 </template>
 

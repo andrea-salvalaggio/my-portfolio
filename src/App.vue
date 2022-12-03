@@ -1,7 +1,7 @@
 <template>
   <div id="app" :class="mode">
     <HeaderComponent :mode="mode" @toggle="toggle"/>
-    <MainComponent :mode="mode"/>
+    <MainComponent :mode="mode" :section="section"/>
     <FooterComponent :mode="mode"/>
   </div>
 </template>
@@ -22,6 +22,7 @@ export default {
   data: function(){
     return{
       mode: 'light',
+      section: 'projects',
     }
   },
 

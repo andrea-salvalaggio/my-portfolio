@@ -1,8 +1,8 @@
 <template>
   <div class="container px-lg-5">
-    <NavigationElement/>
-    <ProjectsElement/>
-    <SkillsElement/>
+    <NavigationElement :section="section"/>
+    <ProjectsElement :section="section" v-if="section === 'projects'" class="projects"/>
+    <SkillsElement :section="section" v-if="section === 'skills'" class="skills"/>
   </div>
 </template>
 
@@ -16,7 +16,9 @@ export default {
     ProjectsElement,
     NavigationElement,
     SkillsElement
-  }
+  },
+
+  props: ['section']
 }
 </script>
 
