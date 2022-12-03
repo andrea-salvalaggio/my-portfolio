@@ -2,7 +2,7 @@
   <div class="container px-lg-5">
     <NavigationElement/>
     <ProjectsElement/>
-    <SkillsElement class="d-none"/>
+    <SkillsElement/>
   </div>
 </template>
 

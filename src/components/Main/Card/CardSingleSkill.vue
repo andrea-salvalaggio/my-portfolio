@@ -1,5 +1,5 @@
 <template>
-    <div class="d-md-flex">
+    <div class="d-md-flex my-5">
 
         <!-- Frontend Skills -->
         <div class="col-12 col-md-6 text-center">
