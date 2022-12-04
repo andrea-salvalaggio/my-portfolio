@@ -4,7 +4,7 @@
 
       <!-- Projects Section -->
       <div class="col-6 btn-container">
-        <button class="btn text-uppercase border-0 px-4 py-3">
+        <button class="text-uppercase border-0 px-4 py-3" @click="section = 'projects'" :class="{btnActive: section === 'projects'}">
           <a class="text-decoration-none">projects
           </a>
         </button>
@@ -12,7 +12,8 @@
 
       <!-- Skills Section -->
       <div class="col-6 btn-container ps-2">
-        <button class="btn text-uppercase border-0 px-4 py-3">
+        <button class="text-uppercase border-0 px-4 py-3"
+        @click="section = 'skills'" :class="{btnActive: section === 'skills'}">
           <a class="text-decoration-none">skills
           </a>
         </button>
@@ -38,39 +39,38 @@ export default {
   background-color: $secondaryColorBgLight;
 }
 
-.btn-container {
-  button {
+.btn-container{
+  button{
     width: 100%;
+    height: 100%;
     font-size: $normalFontSize;
     font-weight: $smallFontWeight;
     border-radius: $btnRadius;
-    background-color: $primaryColorBgLight;
-
-    a {
-      color: $primaryColorBrand;
-    }
   }
 
-  &:nth-child(2) {
-    button {
-      background-color: $secondaryColorBgLight;
+  a{
+    color: $primaryColorText;
+  }
 
-      a {
-        color: $primaryColorText;
-      }
-
-      &:hover {
-        background-color: $primaryColorBgLight;
-
-        a {
-          color: $primaryColorBrand;
-        }
-      }
-    }
+  &:hover{
+    background-color: $secondaryColorHover;
   }
 }
 
-.dark .nav-container{
+.btnActive {
+  width: 100%;
+  height: 100%;
+  font-size: $normalFontSize;
+  font-weight: $smallFontWeight;
+  border-radius: $btnRadius;
+  background-color: $primaryColorBgLight;
+
+  a {
+    color: $primaryColorBrand;
+  }
+}
+
+.dark .nav-container {
   background-color: $secondaryColorBgDark;
   transition: background-color 0.1s ease-in-out;
 }
