@@ -34,35 +34,27 @@ export default {
 .big-margin-top {
   margin-top: 6rem;
 }
-.nav-container {
-  border-radius: $navRadius;
-  background-color: $secondaryColorBgLight;
-}
 
-.btn-container{
-  button{
-    width: 100%;
-    height: 100%;
-    font-size: $normalFontSize;
-    font-weight: $smallFontWeight;
-    border-radius: $btnRadius;
-  }
-
-  a{
-    color: $primaryColorText;
-  }
-
-  &:hover{
-    background-color: $secondaryColorHover;
-  }
-}
-
-.btnActive {
+button {
   width: 100%;
   height: 100%;
   font-size: $normalFontSize;
   font-weight: $smallFontWeight;
   border-radius: $btnRadius;
+  background-color: transparent;
+}
+.nav-container {
+  border-radius: $navRadius;
+  background-color: $secondaryColorBgLight;
+}
+
+.btn-container {
+  a {
+    color: $primaryColorText;
+  }
+}
+
+.btnActive {
   background-color: $primaryColorBgLight;
 
   a {
@@ -72,40 +64,19 @@ export default {
 
 .dark .nav-container {
   background-color: $secondaryColorBgDark;
-  transition: background-color 0.1s ease-in-out;
 }
 
 .dark .btn-container {
-  button {
-    background-color: $primaryColorBgDark;
-    transition: background-color 0.1s ease-in-out;
-
-    a {
-      color: $primaryColorBrand;
-      transition: background-color 0.1s ease-in-out;
-    }
+  a {
+    color: $secondaryColorText;
   }
+}
 
-  &:nth-child(2) {
-    button {
-      background-color: $secondaryColorBgDark;
-      transition: background-color 0.1s ease-in-out;
+.dark .btnActive {
+  background-color: $primaryColorBgDark;
 
-      a {
-        color: $secondaryColorText;
-        transition: background-color 0.1s ease-in-out;
-      }
-
-      &:hover {
-        background-color: $primaryColorBgDark;
-        transition: background-color 0.1s ease-in-out;
-
-        a {
-          color: $primaryColorBrand;
-          transition: background-color 0.1s ease-in-out;
-        }
-      }
-    }
+  a {
+    color: $primaryColorBrand;
   }
 }
 </style>
