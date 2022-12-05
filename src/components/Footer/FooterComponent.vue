@@ -4,7 +4,7 @@
     <!-- Line -->
     <hr class="m-0" v-scroll-reveal.reset="{delay: 100}">
     <div class="container px-lg-5">
-      <div class="row px-md-4 px-lg-5">
+      <div class="row px-md-4 px-lg-5 mx-lg-5">
         <div class="col-12 d-flex justify-content-between align-items-center py-4 px-5">
 
           <!-- Social -->
