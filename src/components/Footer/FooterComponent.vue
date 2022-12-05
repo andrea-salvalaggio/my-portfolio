@@ -18,8 +18,8 @@
           </div>
 
           <!-- Copyright -->
-          <div class="pe-lg-5" v-scroll-reveal.reset="{delay: 150}">
-            <p class="copyright m-0">©<span class="ps-1">2022</span>
+          <div class="pe-lg-5">
+            <p class="copyright m-0" v-scroll-reveal.reset="{delay: 150}">©<span class="ps-1">2022</span>
               Built by Andrea Salvalaggio
             </p>
           </div>

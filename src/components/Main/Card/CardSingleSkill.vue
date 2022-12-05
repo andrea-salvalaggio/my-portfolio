@@ -56,14 +56,14 @@ export default {
                     icon: require("../../../assets/img/icons/vuejs.svg"),
                     title: "vuejs",
                 },
-                {
-                    icon: require("../../../assets/img/icons/dart.svg"),
-                    title: "dart",
-                },
-                {
-                    icon: require("../../../assets/img/icons/flutter.svg"),
-                    title: "flutter",
-                },
+                // {
+                //     icon: require("../../../assets/img/icons/dart.svg"),
+                //     title: "dart",
+                // },
+                // {
+                //     icon: require("../../../assets/img/icons/flutter.svg"),
+                //     title: "flutter",
+                // },
             ],
 
             backSkills:[

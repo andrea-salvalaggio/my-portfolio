@@ -30,24 +30,29 @@ export default {
 @import "@/../styles/variables.scss";
 
 .btn-container {
-  transition: transform 0.4s ease-in-out;
+  // transition: transform 0.4s ease-in-out;
 
   button {
     font-size: $normalFontSize;
     font-weight: $smallFontWeight;
     border-radius: $btnRadius;
     background-color: $primaryColorBrand;
+
+    &:hover {
+      background-color: $primaryColorHover;
+      // transform: translateY(-0.8rem);
+    }
   }
 
   &:nth-child(2) {
     button {
       color: $primaryColorBrand;
       background-color: $secondaryColorBgLight;
-    }
-  }
 
-  &:hover {
-    transform: translateY(-0.8rem);
+      &:hover {
+        background-color: $secondaryColorHover;
+      }
+    }
   }
 }
 
