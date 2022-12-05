@@ -2,12 +2,12 @@
     <div class="col-12 d-flex flex-column align-items-center justify-content-center">
 
       <!-- Profile Image -->
-      <div class="profile-container" v-scroll-reveal.reset="{delay: 400}">
+      <div class="profile-container" v-scroll-reveal.reset="{delay: 300}">
         <!-- <img src="../../../assets/img/profile-pic-light.png" alt="Profile Image"> -->
       </div>
 
       <!-- Title -->
-      <div class="text-center py-3" v-scroll-reveal.reset="{delay: 500}">
+      <div class="text-center py-3" v-scroll-reveal.reset="{delay: 350}">
         <h2>Hey! I’m Andrea<br>Full Stack Web Developer<br> Based in Padua, Italy
         </h2>
       </div>

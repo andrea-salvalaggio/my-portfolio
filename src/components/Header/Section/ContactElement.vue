@@ -4,7 +4,7 @@
       <!-- Download CV -->
       <div class="btn-container pe-2">
         <a class="text-decoration-none text-reset" href="https://drive.google.com/file/d/1-1MjQ4YnbzlUrKQYh7FwioFZe9VDRS0g/view?usp=sharing" target="_blank">
-          <button class="btn-shadow text-uppercase text-white border-0 px-4 py-3" v-scroll-reveal.reset="{delay: 600}">download cv
+          <button class="btn-shadow text-uppercase text-white border-0 px-4 py-3" v-scroll-reveal.reset="{delay: 400}">download cv
             <i class="ri-download-line align-middle ps-1"></i>
           </button>
         </a>
@@ -13,7 +13,7 @@
       <!-- Contact Me -->
       <div class="btn-container ps-2">
         <a class="text-decoration-none text-reset" href="mailto:andrea.salvalaggio95@gmail.com?subject=Richiesta incontro">
-          <button class="text-uppercase border-0 px-4 py-3" v-scroll-reveal.reset="{delay: 600}">contact me
+          <button class="text-uppercase border-0 px-4 py-3" v-scroll-reveal.reset="{delay: 400}">contact me
             <i class="ri-mail-line align-top ps-1"></i>
           </button>
         </a>

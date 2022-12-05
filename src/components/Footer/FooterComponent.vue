@@ -2,13 +2,13 @@
   <div class="container-fluid p-0 m-0">
 
     <!-- Line -->
-    <hr class="m-0" v-scroll-reveal.reset="{delay: 200}">
+    <hr class="m-0" v-scroll-reveal.reset="{delay: 100}">
     <div class="container px-lg-5">
       <div class="row px-md-4 px-lg-5">
         <div class="col-12 d-flex justify-content-between align-items-center py-4 px-5">
 
           <!-- Social -->
-          <div class="icon ps-lg-5" v-scroll-reveal.reset="{delay: 300}">
+          <div class="icon ps-lg-5" v-scroll-reveal.reset="{delay: 150}">
             <a class="text-decoration-none text-reset" href="https://github.com/andrea-salvalaggio" target="_blank">
               <i class="ri-github-fill fs-5"></i>
             </a>
@@ -18,7 +18,7 @@
           </div>
 
           <!-- Copyright -->
-          <div class="pe-lg-5" v-scroll-reveal.reset="{delay: 300}">
+          <div class="pe-lg-5" v-scroll-reveal.reset="{delay: 150}">
             <p class="copyright m-0">©<span class="ps-1">2022</span>
               Built by Andrea Salvalaggio
             </p>

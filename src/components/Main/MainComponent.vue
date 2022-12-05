@@ -1,8 +1,8 @@
 <template>
   <div class="container px-lg-5">
-    <NavigationElement :section="section" v-scroll-reveal.reset="{delay: 700}"/>
-    <ProjectsElement :section="section" v-if="section === 'projects'" class="projects" v-scroll-reveal.reset="{delay: 800}"/>
-    <SkillsElement :section="section" v-if="section === 'skills'" class="skills" v-scroll-reveal.reset="{delay: 800}"/>
+    <NavigationElement :section="section" v-scroll-reveal.reset="{delay: 500}"/>
+    <ProjectsElement :section="section" v-if="section === 'projects'" class="projects" v-scroll-reveal.reset="{delay: 550}"/>
+    <SkillsElement :section="section" v-if="section === 'skills'" class="skills" v-scroll-reveal.reset="{delay: 550}"/>
   </div>
 </template>
 

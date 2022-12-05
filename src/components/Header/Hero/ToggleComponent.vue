@@ -1,5 +1,5 @@
 <template>
-    <div @click="$emit('toggle')" class="icon pe-lg-5" v-scroll-reveal.reset="{delay: 300}">
+    <div @click="$emit('toggle')" class="icon pe-lg-5" v-scroll-reveal.reset="{delay: 200}">
       <!-- <i v-if="(mode = !mode)" class="ri-moon-line"
       @click="$emit('toggle')">
       </i>
