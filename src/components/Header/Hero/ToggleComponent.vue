@@ -31,7 +31,6 @@ export default {
     background-image: url(@/assets/img/icons/dark-mode-hover.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    box-shadow: 10px 5px 5px red;
     cursor: pointer;
   }
 }
