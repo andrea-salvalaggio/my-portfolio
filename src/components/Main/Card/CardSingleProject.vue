@@ -115,14 +115,15 @@ export default {
       border-radius: $btnRadius;
       color: $primaryColorBrand;
       background-color: $secondaryColorBrand;
-      transition: transform 0.4s ease-in-out;
+      // transition: transform 0.4s ease-in-out;
 
       a {
         color: $primaryColorBrand;
       }
 
       &:hover {
-        transform: translateY(-0.8rem);
+        background-color: $tertiaryColorHover;
+        // transform: translateY(-0.8rem);
       }
     }
   }
