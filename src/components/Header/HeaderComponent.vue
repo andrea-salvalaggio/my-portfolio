@@ -4,7 +4,7 @@
       <div class="col-12 d-flex justify-content-between align-items-center py-4 px-5">
         <div class="ps-lg-5">
           <a href="#">
-            <img class="logo w-50" src="../../assets/img/logo.svg" alt="Personal Logo" v-scroll-reveal.reset>
+            <img class="logo w-50" src="../../assets/img/logo.svg" alt="Personal Logo" v-scroll-reveal.reset="{delay: 300}">
           </a>
         </div>
 

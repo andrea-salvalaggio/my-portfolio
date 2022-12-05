@@ -8,7 +8,7 @@ Vue.use(VueScrollReveal, {
   class: 'v-scroll-reveal',
   duration: 1000,
   scale: 1,
-  distance: '30px',
+  distance: '80px',
   mobile: false
 });
 
