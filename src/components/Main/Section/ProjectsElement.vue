@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import CardSingleProject from '../Card/CardSingleProject.vue';
+import CardSingleProject from './CardSingleProject.vue';
 
 export default {
     components: {

@@ -1,7 +1,8 @@
 <template>
   <div id="app" :class="mode">
     <HeaderComponent :mode="mode" @toggle="toggle"/>
-    <MainComponent :mode="mode" :section="section"/>
+    <MainComponent :mode="mode" :section="section"
+    @layout="layout"/>
     <FooterComponent :mode="mode"/>
   </div>
 </template>
@@ -32,6 +33,14 @@ export default {
         this.mode = "light";
       } else {
         this.mode = "dark";
+      }
+    },
+
+    layout(){
+      if (this.section === "skills"){
+        this.section = "projects";
+      } else {
+        this.section = "skills";
       }
     },
   }

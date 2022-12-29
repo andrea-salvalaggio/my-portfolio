@@ -4,7 +4,7 @@
 
       <!-- Projects Section -->
       <div class="col-6 btn-container">
-        <button class="text-uppercase border-0 px-4 py-3" @click="section = 'projects'" :class="{btnActive: section === 'projects'}">
+        <button class="text-uppercase border-0 px-4 py-3" @click="$emit('layout')" :class="{btnActive: section === 'projects'}">
           <a class="text-decoration-none">projects
           </a>
         </button>
@@ -12,8 +12,7 @@
 
       <!-- Skills Section -->
       <div class="col-6 btn-container ps-2">
-        <button class="text-uppercase border-0 px-4 py-3"
-        @click="section = 'skills'" :class="{btnActive: section === 'skills'}">
+        <button class="text-uppercase border-0 px-4 py-3" @click="$emit('layout')" :class="{btnActive: section === 'skills'}">
           <a class="text-decoration-none">skills
           </a>
         </button>
@@ -24,7 +23,19 @@
 
 <script>
 export default {
-  props: ['section']
+
+  props: ['section'],
+
+  methods: {
+    // layoutProject() {
+    //   this.section = true;
+    // },
+
+    // layoutSkill() {
+    //   this.section = false;
+    // }
+  }
+  
 }
 </script>
 
@@ -79,5 +90,4 @@ button {
     color: $primaryColorBrand;
   }
 }
-
 </style>

@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import CardSingleSkill from '../Card/CardSingleSkill.vue';
+import CardSingleSkill from './CardSingleSkill.vue';
 
 export default {
   components: {
