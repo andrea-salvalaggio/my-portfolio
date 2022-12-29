@@ -1,6 +1,6 @@
 <template>
     <div class="row justify-content-center mx-3 mx-md-0 mx-lg-4">
-        <CardSingleProject :section="section"/>
+        <CardSingleProject :section="section" v-scroll-reveal.reset="{delay: 300}"/>
     </div>
 </template>
 
