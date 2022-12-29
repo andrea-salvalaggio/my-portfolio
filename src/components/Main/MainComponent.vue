@@ -24,18 +24,11 @@ export default {
     }
   },
 
-  // props: ['section'],
-
   methods: {
     callEmit(needle){
-      console.warn(needle)
       this.section = needle
     }
   },
-
-  // created() {
-  //   console.log(this.section)
-  // }
 }
 </script>
 
