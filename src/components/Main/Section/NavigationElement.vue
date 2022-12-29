@@ -4,7 +4,8 @@
 
       <!-- Projects Section -->
       <div class="col-6 btn-container">
-        <button class="text-uppercase border-0 px-4 py-3" @click="$emit('layout')" :class="{btnActive: section === 'projects'}">
+        <button class="text-uppercase border-0 px-4 py-3"
+        @click="checkSelection(0), $emit('emit', section)" :class="{btnActive: section === 'projects'}">
           <a class="text-decoration-none">projects
           </a>
         </button>
@@ -12,7 +13,8 @@
 
       <!-- Skills Section -->
       <div class="col-6 btn-container ps-2">
-        <button class="text-uppercase border-0 px-4 py-3" @click="$emit('layout')" :class="{btnActive: section === 'skills'}">
+        <button class="text-uppercase border-0 px-4 py-3"
+        @click="checkSelection(1), $emit('emit', section)" :class="{btnActive: section === 'skills'}">
           <a class="text-decoration-none">skills
           </a>
         </button>
@@ -24,18 +26,35 @@
 <script>
 export default {
 
-  props: ['section'],
+  // props: ['section'],
+
+  data: function(){
+    return {
+      section: 'projects',
+      bool: 0,
+      check: 0,
+    }
+  },
 
   methods: {
-    // layoutProject() {
-    //   this.section = true;
-    // },
+    checkSelection(string){
+      console.log(string);
+      if (string != this.check) {
+        this.bool = !this.bool;
+      }
 
-    // layoutSkill() {
-    //   this.section = false;
-    // }
+      // console.error(this.bool);
+      
+      if (this.bool == 0) {
+        this.section = 'projects'
+      } else {
+        this.section = 'skills'
+      }
+
+      this.check = this.bool;
+    }
+
   }
-  
 }
 </script>
 

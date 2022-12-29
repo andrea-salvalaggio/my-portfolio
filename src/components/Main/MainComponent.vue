@@ -1,8 +1,8 @@
 <template>
   <div class="container px-lg-5">
-    <NavigationElement :section="section" v-scroll-reveal.reset="{delay: 500}" @layout="$emit('layout')"/>
-    <ProjectsElement :section="section" v-if="section === 'projects'" class="projects" v-scroll-reveal.reset="{delay: 550}"/>
-    <SkillsElement :section="section" v-if="section === 'skills'" class="skills" v-scroll-reveal.reset="{delay: 550}"/>
+    <NavigationElement v-scroll-reveal.reset="{delay: 500}" @emit="callEmit"/>
+    <ProjectsElement v-if="section === 'projects'" class="projects" v-scroll-reveal.reset="{delay: 550}"/>
+    <SkillsElement v-if="section === 'skills'" class="skills" v-scroll-reveal.reset="{delay: 550}"/>
   </div>
 </template>
 
@@ -18,7 +18,24 @@ export default {
     SkillsElement
   },
 
-  props: ['section']
+  data: function(){
+    return {
+      section: 'projects',
+    }
+  },
+
+  // props: ['section'],
+
+  methods: {
+    callEmit(needle){
+      console.warn(needle)
+      this.section = needle
+    }
+  },
+
+  // created() {
+  //   console.log(this.section)
+  // }
 }
 </script>
 
