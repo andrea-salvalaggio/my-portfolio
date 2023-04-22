@@ -70,12 +70,18 @@ button {
   border-radius: $btnRadius;
   background-color: transparent;
 
-  a{
+  a {
     font-size: 16px;
+  }
+
+  &:hover {
+    a {
+      color: $primaryColorBrand;
+    }
   }
 }
 .nav-container {
-  border-radius: $navRadius;
+  border-radius: 1.8rem;
   background-color: $secondaryColorBgLight;
 }
 

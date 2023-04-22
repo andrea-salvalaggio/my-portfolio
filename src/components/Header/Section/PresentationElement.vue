@@ -24,16 +24,16 @@ export default {
 @import "@/../styles/variables.scss";
 
 .profile-container {
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
   background-image: url(@/assets/img/profile-pic-light.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .dark .profile-container {
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
   background-image: url(@/assets/img/profile-pic-dark.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -48,7 +48,7 @@ h2 {
   }
 
   @media (min-width: 992px) {
-    font-size: 2.6rem;
+    font-size: 2.8rem;
   }
 }
 </style>

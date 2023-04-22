@@ -112,7 +112,7 @@ export default {
     button {
       font-size: $normalFontSize;
       font-weight: $smallFontWeight;
-      border-radius: $btnRadius;
+      border-radius: 1.2rem;
       color: $primaryColorBrand;
       background-color: $secondaryColorBrand;
       // transition: transform 0.4s ease-in-out;
