@@ -7,7 +7,7 @@
       </div>
 
       <!-- Title -->
-      <div class="text-center py-3" v-scroll-reveal.reset="{delay: 350}">
+      <div class="text-center py-4 py-lg-3" v-scroll-reveal.reset="{delay: 350}">
         <h2>Hey! I’m Andrea<br>Full Stack Web Developer<br> Based in Padua, Italy
         </h2>
       </div>
@@ -42,10 +42,12 @@ export default {
 h2 {
   font-size: $h2FontSize;
   font-weight: $bigFontWeight;
-}
 
-@media screen and (min-width: 992px) {
-  h2 {
+  @media (max-width: 576px) {
+    font-size: 2.4rem;
+  }
+
+  @media (min-width: 992px) {
     font-size: 2.6rem;
   }
 }

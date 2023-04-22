@@ -5,10 +5,10 @@
     <hr class="m-0" v-scroll-reveal.reset="{delay: 100}">
     <div class="container px-lg-5">
       <div class="row px-md-4 px-lg-5 mx-lg-5">
-        <div class="col-12 d-flex justify-content-between align-items-center py-4 px-5">
+        <div class="col-12 d-md-flex justify-content-between align-items-center py-4 px-5">
 
           <!-- Social -->
-          <div class="icon ps-lg-5" v-scroll-reveal.reset="{delay: 150}">
+          <div class="icon ps-lg-5 text-center" v-scroll-reveal.reset="{delay: 150}">
             <a class="text-decoration-none text-reset" href="https://github.com/andrea-salvalaggio" target="_blank">
               <i class="ri-github-fill fs-5"></i>
             </a>
@@ -18,8 +18,8 @@
           </div>
 
           <!-- Copyright -->
-          <div class="pe-lg-5">
-            <p class="copyright m-0" v-scroll-reveal.reset="{delay: 150}">©<span class="ps-1">2022</span>
+          <div class="pe-lg-5 pt-2 pt-lg-0 text-center">
+            <p class="copyright m-0" v-scroll-reveal.reset="{delay: 150}">©<span class="ps-1">2023</span>
               Built by Andrea Salvalaggio
             </p>
           </div>
@@ -47,18 +47,26 @@ hr {
 }
 
 .icon {
-  i:hover {
-    color: $primaryColorBrand;
-    cursor: pointer;
+  i {
+    transition: .3s;
+
+    &:hover{
+      color: $primaryColorBrand;
+      cursor: pointer;
+    }
   }
 }
 
 .copyright {
-  font-size: $smallFontSize;
+  font-size: 13px;
   font-weight: $smallerFontWeight;
 
   span {
     color: $primaryColorBrand;
+  }
+  
+  @media (max-width: 576px){
+    font-size: 13px;
   }
 }
 </style>

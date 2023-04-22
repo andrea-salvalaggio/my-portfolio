@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="px-4 px-lg-0">
     <PresentationElement/>
     <ContactElement/>
   </div>

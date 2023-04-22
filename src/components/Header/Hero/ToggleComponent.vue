@@ -24,6 +24,7 @@ export default {
   background-image: url(@/assets/img/icons/dark-mode.svg);
   background-repeat: no-repeat;
   background-size: contain;
+  transition: .3s;
 
   &:hover {
     width: 18px;
@@ -42,6 +43,7 @@ export default {
   background-repeat: no-repeat;
   background-size: contain;
   filter: invert(1);
+  transition: .3s;
 
   &:hover {
     width: 18px;
